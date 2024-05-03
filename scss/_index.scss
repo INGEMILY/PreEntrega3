@@ -1,0 +1,187 @@
+.bg-azul{
+    background-color: #168aad;
+}
+
+.navbar-nav{
+ 
+    padding: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    li{
+        margin-right:20px;
+    }
+    
+}
+
+
+.nav-link{
+    color: rgb(255, 255, 255);
+
+    &.nav-link{
+        font-size: 30px;
+        row-gap: 2rem;
+    }
+    
+    &:hover{
+        background-color: #1e7fbb;
+    }
+}
+
+h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 800;
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding-top: 60px ;
+  
+}
+.index{
+    background: linear-gradient(to right, #ffffff, #bbbaba, #757575, #3f3f3f, #333333, #000000); /* Gradiente de blanco a negro */
+
+    p {
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-size: 25px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+}
+
+h2 {
+color: rgb(0, 0, 0);
+text-align: center;
+font-size: 2rem;
+padding-top: 50px;
+margin-bottom: 20px;
+display: block;
+margin-block-start: 0.83em; 
+margin-block-end: 0.83em;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+font-weight: bold;
+}
+
+
+.navbar-brand{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 5px 30px;
+    color: #e9e9e9;
+}
+
+.nav-links  {
+ 
+    border: none;
+    background-color: #130f6a;
+    padding: 15px 30px;
+    border-radius: 5px;
+    margin-left: 30px; 
+    cursor: pointer;
+    font-size: 20px;
+}
+
+
+
+
+.carousel-inner,
+.carousel-item{
+    width: 100%;
+    height: 800px;
+    position: relative;
+  
+    img {
+        width: 100%;
+        height:100%;
+        object-fit: cover;
+       
+    }
+}
+
+/* --------------------------------------------------------------- */
+/* CSS para hacer el carrusel responsive */
+@media (max-width: 767px) {
+    .carousel-inner,
+    .carousel-item {
+        height: auto; 
+
+        img {
+            height: auto; 
+            object-fit: cover;
+        }
+    }
+}
+  
+  /* CSS para hacer la sección "About Us" responsive */
+  @media (max-width: 767px) {
+    .aboutUs {
+        flex-direction: column; 
+
+    }
+  
+    .image-logo-dos {
+        order: -1; 
+        margin-bottom: 3px; 
+    }
+  }
+ 
+/* --------------------------------------------------------------- */
+#h1about{
+    margin-top: 0;
+    background: linear-gradient(to right, #ffffff, #bbbaba, #757575, #3f3f3f, #333333, #000000); 
+
+}
+.container-about {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to right, #ffffff, #bbbaba, #757575, #3f3f3f, #333333, #000000); 
+
+}
+
+.aboutUs {
+    width: 50%; 
+    align-content: center;
+}
+
+
+
+.image-logodos img {
+    max-width: 100%; 
+    height: auto; 
+    justify-content: center;
+    padding-left: 100px;
+}
+
+.accordion-button{
+    background-color: #2749b9;
+    font-size: 25px;
+    color:rgb(252, 252, 252) ;
+}
+
+.accordion-button:not(.collapsed){
+    background-color: #606060;
+    color: white;
+}
+button.accordion-button.collapsed::after{
+    background-color: rgb(18, 95, 190);
+}
+.accordion-body{
+    font-size: 25px;
+}
+
+@media (max-width: 767px) {
+    .aboutUs {
+        display: flex; 
+        flex-direction: column; 
+        width: 100%; 
+    }
+  
+    .accordion-item {
+        width: 100%; 
+    }
+}

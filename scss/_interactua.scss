@@ -1,0 +1,103 @@
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap:20px ;
+}
+
+/* Estilos del aside de retos */
+
+
+.retos-section {
+display: flex;
+flex-direction: column;
+}
+
+.retos-aside {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.retos-title {
+    margin-bottom: 10px;
+}
+
+.retos-list {
+    list-style: none;
+    padding: 0;
+}
+
+.retos-item {
+    margin-bottom: 5px;
+}
+
+.product span {
+    background-color: rgb(196, 70, 70);
+    padding: 10px;
+    font-weight: bold;
+    position: absolute;
+    top: 15px;
+    right: -10px;
+}
+@media (max-width: 767px) {
+    .explore {
+        flex-direction: column; 
+    }
+
+    .imginter {
+        flex-direction: column; 
+    }
+
+    .imginter img {
+        width: 100%; 
+        height: auto;
+    }
+
+    .product-content a {
+        width: 100%; 
+    }
+}
+@media (min-width: 768px) {
+    .main-container {
+        display: grid;
+        grid-template-columns: 1fr 4fr; 
+        gap: 20px;
+    }
+
+    .retos-section {
+        order: -1; 
+    }
+}
+@media (max-width: 767px) {
+    .main-container {
+        flex-direction: column; 
+    }
+
+    .retos-section {
+        order: -1; 
+        margin-bottom: 20px; 
+    }
+}
+/* -----------------------------*/
+.imginter {
+    flex: 1; 
+    background-color: #cfccccf0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    overflow-x: hidden;
+}
+.imginter:hover {
+    filter: hue-rotate(90deg);
+    border-radius: 10%;
+   
+}
+
+.imginter img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
