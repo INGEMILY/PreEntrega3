@@ -1,0 +1,30 @@
+// _header.scss
+@import 'variables';
+@import 'mixins';
+
+header {
+  background-color: $secondary-color;
+  @include flex-center;
+  height: 60px;
+
+  nav {
+    ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+
+      li {
+        margin-right: $spacing-unit;
+
+        a {
+          color: white;
+          text-decoration: none;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
